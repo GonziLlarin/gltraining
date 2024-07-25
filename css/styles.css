@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Mukta", sans-serif;
+}
+h1{
+    font-size: 72px;
+    font-weight: 500;
+}
+
+h2{
+    font-size: 36px;
+    font-weight: 300;
+}
+
+h3{
+    font-size: 28px;
+    font-weight: 300;
+}
+
+p{
+    font-size: 26px;
+    font-weight: 300;
+}
+/** HEADER **/
+
+header{
+    background-image: url('../assets/img_proyecto/cuadro-encabezado.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+}
+
+.logoHeader{
+    width: 100px;
+    height: 100%;
+    overflow: hidden;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    height: 100%;
+    padding-right: 50px;
+}
+
+header nav ul li a{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/** MAIN **/
+
+.portada{
+    background-image: url('../assets/img_proyecto/foto-ppl.png');
+    height: 927px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.portada h1{
+    font-size: 5.625rem;
+    padding-left: 100px;
+    padding-top: 150px;
+}
+
+.portada h2{
+    padding-left: 100px;
+    font-weight: 450;
+    color: black;
+}
+
+/**section personalizados**/
+
+.entrenamientosPersonalizados{
+    background-image: url('../assets/img_proyecto/SECTION02.0.png');
+    background-size: cover;
+    color: white;
+}
+
+.personalizadosArticles{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 400px;
+}
+
+.personalizadosArticles article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.entrenamientosPersonalizados h2{
+    padding-top: 100px;
+    padding-left: 3.125rem;
+}
+
+.entrenamientosPersonalizados article{
+    padding: 50px;
+}
+
+.entrenamientosPersonalizados article h3{
+    padding-top: 20px;
+}
+
+/**section SOBRE NOSOTROS**/
+
+.sobreNosotros{
+    background-image: url('../assets/img_proyecto/SECTION3.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 800px;
+    color:white;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+
+.sobreNosotros h2{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+}
+
+.sobreNosotros article{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    grid-column: 3/5;
+    grid-row: 2/4;
+}
+
+.sobreNosotros article p{
+    background-color: #f2958d71;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.375rem;
+    width: 600px;
+}
+
+.sobreNosotros article a{
+    padding-top: 1.25rem;
+    color: white;
+}
+
+
+/**footerr**/
+
+
+footer{
+    background-image: url('../assets/img_proyecto/cuadro-encabezado.png');
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+.flex-footer{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+footer section a img{
+    padding: 20px;
+    width: 45px;
+    height: 45px;
+}
+
+/** RUTINAS **/
+
+/**portada**/
+
+.portada{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.grid-rutinas{
+    margin-top: 150px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(200px 200px 200px);
+    grid-template-rows: repeat(100px 100px);
+    grid-template-areas: 
+    "fuerza hipertrofia resistencia"
+    "potencia velocidad cardiovascular";
+    justify-content: center;
+    align-items: center;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 51%, rgba(255,255,255,1) 62%, rgba(255,255,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fuerza{
+    grid-area: fuerza;
+}
+.hipertrofia{
+    grid-area: hipertrofia;
+}
+.resistencia{
+    grid-area: resistencia;
+}
+.potencia{
+    grid-area: potencia;
+}
+.velocidad{
+    grid-area: velocidad;
+}
+.cardiovascular{
+    grid-area: cardiovascular;
+}
+
+
+.entrenamientos-order{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.sub-order{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.sub-order article{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Nosotross  */
+
+
+/**MAIN**/
+
+.nosotrosMain{
+    background-image: url('../assets/img_proyecto/SECTION02.0.png');
+    background-size:contain;
+    color: white;
+    padding: 50px;
+}
+
+.nosotrosMain section{
+    padding-top: 50px;
+}
+
+.nosotrosMain section h2{
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+
+.nosotrosMain section p{
+    padding-top: 50px;
+}
+
+.nosotrosMain section iframe{
+    display: block;
+    padding-top: 50px;
+    margin: auto;
+}
+
+.flex-nosotros{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+}
+
+/* Contacto  */
+
+.contacto{
+    background-image: url('../assets/img_proyecto/SECTION02.0.png');
+    background-size: contain;
+    color: white;
+    padding: 50px;
+}
+
+.contacto h1{
+    padding-top: 50px;
+}
+
+.contacto form{
+    background-image: url('../assets/img_proyecto/contacto/Rectangle\ 8.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 28px;
+    color: white;
+    width: 600px;
+    padding: 25px;
+    margin: auto;
+}
+.form-flex{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inputNormal{
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #FF895B;
+    width: 60%;
+    font-family: "Mukta", sans-serif;
+    font-weight: 500;
+}
+
+.buttonRegistro{
+    background-color:#FAAA65;
+    color: black;
+    border-radius: 30px;
+    padding: 15px 25px;
+    font-size: 32px;
+    margin: 15px;
+    border: none;
+}
+
+
+/* VIDEOS */
+
+.videos{
+    background-image: url('../assets/img_proyecto/SECTION02.0.png');
+    background-size: contain;
+    color: white;
+    padding: 50px;
+}
+.videos .intro{
+    padding: 50px;
+    width: 70%;
+    margin: auto;
+}
+.videos h1{
+    padding-top: 50px;
+}
+
+.videos h3{
+    color: #FE7D4B;
+    padding: 15px;
+}
+
+.videos img{
+    width: 100%;
+}
+
+.flex-videos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
