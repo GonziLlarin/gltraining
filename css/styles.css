@@ -326,7 +326,7 @@ footer section a img {
     background-size: cover;
     font-size: 28px;
     color: white;
-    width: 600px;
+    width: 37.5rem;
     padding: 25px;
     margin: auto;
 }
@@ -485,6 +485,9 @@ footer section a img {
         height: 18.75rem;
     }
 
+    .contacto form{
+        width: 80%;
+    }
     form{
         display: flex;
         justify-content: center;
@@ -492,7 +495,7 @@ footer section a img {
 
     .form-flex{
         width: 28.125rem;
-        height: 37.5rem;
+        /* height: 37.5rem; */
         padding: 1.25rem;
         padding-bottom: 2.1875rem;
     }
@@ -509,13 +512,12 @@ footer section a img {
     .menu-hamburguesa{
         display: flex;
         flex-wrap: nowrap;
-        position: absolute;
+        position:fixed;
         justify-content: end;
         align-items: center;
         width: 100%;
         padding-top: 15px;
         padding-right: 15px;
-
     }
     .menu-hamburguesa img{
         width: 5rem;
