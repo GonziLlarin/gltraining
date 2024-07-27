@@ -504,7 +504,7 @@ footer section a img {
 
 /**          TAMAÑO CELU             - -              --             --**/
 
-@media (max-width:320px){
+@media (max-width:390px){
 
     .menu-hamburguesa{
         display: flex;
@@ -554,10 +554,7 @@ footer section a img {
         font-size: 1rem;
     }
 
-    .portada{
-        height: 100vh;
-        background-size:auto;
-    }
+
 
     .entrenamientosPersonalizados{
         display: flex;
@@ -584,12 +581,41 @@ footer section a img {
         justify-content: center;
         align-items: center;
         height: 100%;
-        
+        font-weight: 450;
+        color: white;
     }
 
     .sobreNosotros article p{
         width: 80%;
     }
 
-    
+    .grid-rutinas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 100px;
+    }
+    .grid-rutinas a h2{
+        font-weight: 450;
+        background-color: black;
+        -webkit-text-fill-color: black;
+        -webkit-background-clip: text;
+        
+    }
+
+    .sub-order{
+        flex-direction: column;
+    }
+    .sub-order article{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 15px;
+        width: 296px;
+    }
+    .sub-order article h3{
+        padding: 0;
+    }
 }
