@@ -6,6 +6,9 @@
     list-style: none;
     font-family: "Mukta", sans-serif;
 }
+/** BOOTSTRAP PRUEBA**/
+
+
 body{
     display: flex;
     flex-direction: column;
@@ -36,41 +39,44 @@ p {
 
 /** HEADER **/
 
-header {
-    background-image: url('../assets/img_proyecto/cuadro-encabezado.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 4.375rem;
+.bg-mio{
     position: fixed;
+    background-image: url('../assets/img_proyecto/cuadro-encabezado.png');
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-
-.logoHeader {
-    width: 100px;
-    height: 100%;
-    overflow: hidden;
+.btn-nav{
+    background-color: white;
+    color: white;
 }
-
-nav ul {
+.nav-mio{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
     gap: .9375rem;
     height: 100%;
     padding-right: 3.125rem;
 }
-
-header nav ul li a {
+.contain-btn-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logoHeader {
+    width: 100px;
+    height: 100%;
+    overflow: hidden;
+}
+.navbar-nav a{
     color: white;
-    font-size: 1.25rem;
-    font-weight: 300;
 }
 
-header nav ul li a:hover{
+
+.nav-mio a:hover{
     filter: drop-shadow(2px 2px 5px black);
     text-decoration: underline 1px #ff895b9f;
     text-underline-offset: 3px;
@@ -215,8 +221,8 @@ footer {
 
 footer section a img {
     padding: 20px;
-    width: 45px;
-    height: 45px;
+    width: 85px;
+    height: 85px;
 }
 footer section a:hover{
     filter: drop-shadow(2px 2px 5px black);
@@ -336,8 +342,7 @@ footer section a:hover{
 }
 
 .nosotrosMain section iframe {
-    display: block;
-    padding-top: 50px;
+    margin: 3.125rem;
 }
 
 .flex-nosotros {
@@ -365,7 +370,9 @@ footer section a:hover{
     margin: 50px;
     padding: 50px;
 }
-
+.container-form{
+    margin-bottom: 5.425rem;
+}
 .contacto form {
     background-image: url('../assets/img_proyecto/contacto/Rectangle\ 8.png');
     background-repeat: no-repeat;
@@ -383,7 +390,6 @@ footer section a:hover{
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-
 }
 
 .inputNormal {
@@ -391,7 +397,7 @@ footer section a:hover{
     border: none;
     border-radius: 4px;
     background-color: #FF895B;
-    width: 40%;
+    width: 80%;
     font-family: "Mukta", sans-serif;
     font-weight: 500;
 }
@@ -438,6 +444,9 @@ form :focus{
 .videos h1 {
     padding-top: 50px;
 }
+.videos h2{
+    padding: .625rem;
+}
 
 .videos h3 {
     color: #FE7D4B;
@@ -454,11 +463,35 @@ form :focus{
     justify-content: center;
     align-items: center;
 }
+.flex-videos a{
+    text-decoration: none;
+}
 
 .flex-videos a:hover{
     text-shadow: 2px 2px 20px white;
     text-decoration: underline 1px #ff895b9f;
     text-underline-offset: 3px;
+}
+
+
+
+/** BOOTSTRAP**/
+.contain-contain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/img_proyecto/gim-aire-libre.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 3.125rem;
+    margin-top: 3.4375rem;
+}
+.section-cambios{
+    height: 500px;
+    padding: 50px;    
+    overflow: hidden;
 }
 
 /**          TAMAÑO TABLET             - -              --             --**/
@@ -490,7 +523,12 @@ form :focus{
     p {
         font-size: 1.625rem;
     }
-
+    .nav-mio{
+        flex-direction: column;
+        gap: .0625rem;
+        align-items: start;
+        padding: .3125rem;
+    }
     .portada {
         height: 37.5rem;
         width: 100%;
@@ -598,7 +636,7 @@ form :focus{
 @media (max-width:550px){
 
 header{
-    height: 250px;
+    height: fit-content;
     position: relative;
 }
 .logoHeader{
@@ -612,7 +650,7 @@ nav ul{
     .portada h1 {
         font-size: 2.25rem;
         font-weight: 500;
-        padding-top: 5rem;
+        
         padding-left: 1.25rem;
     }
 
@@ -672,8 +710,7 @@ nav ul{
         display: flex;
         flex-direction: column;
         align-items: center;
-        position: relative;
-        top: 120px;
+        gap: .9375rem;
     }
 
     .grid-rutinas a h2{
@@ -734,14 +771,14 @@ nav ul{
         padding: 0;
     }
     .form-flex{ 
-        width: 300px ;
+        width: 100% ;
         height:fit-content;
         padding: 0 15px;
-
     }
 
     .form-flex label{    
         font-size: 1rem;
+        padding: .9375rem;
     }
 
     .buttonRegistro{
