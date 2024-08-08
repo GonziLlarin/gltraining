@@ -489,6 +489,15 @@ form :focus{
     margin-top: 3.4375rem;
     height: 100vh;
 }
+
+.contain-contain .p-cambios{
+    background-color: #faa25b7e;
+    padding: .3125rem;
+    border-radius: 15px;
+}
+.carousel-caption p{
+    font-size: .875rem;
+}
 .section-cambios{
     height: 500px;
     padding: 50px;    
