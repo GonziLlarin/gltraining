@@ -71,8 +71,7 @@ main {
     background-size: cover; }
     main .portada h1 {
       font-size: 5.625rem;
-      padding-left: 6.25rem;
-      padding-top: 9.375rem; }
+      padding: 9.375rem 0 0 6.25rem; }
     main .portada h2 {
       padding-left: 100px;
       font-weight: 450;
@@ -209,8 +208,7 @@ main .entrenamientos-order {
   background-size: contain;
   color: white; }
   .nosotrosMain h1 {
-    padding-left: 6.25rem;
-    padding-top: 9.375rem; }
+    padding: 9.375rem 0 0 6.25rem; }
   .nosotrosMain article {
     display: flex;
     flex-direction: column;
@@ -241,8 +239,7 @@ main .entrenamientos-order {
   background-size: contain;
   color: white; }
   .contacto h1 {
-    padding-left: 6.25rem;
-    padding-top: 9.375rem; }
+    padding: 9.375rem 0 0 6.25rem; }
   .contacto .container-form {
     margin-bottom: 5.425rem;
     padding-top: 3.125rem; }
@@ -289,6 +286,64 @@ main .entrenamientos-order {
             box-shadow: 0 0 30px white;
             color: rgba(2, 2, 2, 0.774); }
 
+.videos {
+  background-image: url("../assets/img_proyecto/SECTION02.0.png");
+  background-size: contain;
+  color: white; }
+  .videos h1 {
+    padding: 9.375rem 0 0 6.25rem; }
+  .videos h2 {
+    padding: .625rem; }
+  .videos .intro {
+    padding: 3.125rem;
+    width: 70%;
+    margin: auto; }
+  .videos img {
+    width: 100%; }
+  .videos .flex-videos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    justify-content: center;
+    align-items: center;
+    gap: none; }
+    .videos .flex-videos a {
+      text-decoration: none; }
+      .videos .flex-videos a:hover {
+        text-shadow: 2px 2px 20px white;
+        text-decoration: underline 1px #ff895b9f;
+        text-underline-offset: 3px; }
+  .videos h3 {
+    color: #FE7D4B;
+    padding: 15px; }
+
+.main-bootstrap {
+  background-image: url(../assets/img_proyecto/gim-aire-libre.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .main-bootstrap h1 {
+    padding: 9.375rem 0 0 6.25rem; }
+  .main-bootstrap .contain-contain {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+    padding: 3.125rem; }
+    .main-bootstrap .contain-contain .p-cambios {
+      background-color: #faa25b7e;
+      padding: .3125rem;
+      border-radius: 15px; }
+    .main-bootstrap .contain-contain .section-cambios {
+      height: 500px;
+      padding: 50px;
+      overflow: hidden; }
+
+.carousel-caption p {
+  font-size: .875rem; }
+
 .container-fluid .navbar-brand .logoHeader {
   width: 100px;
   height: 100%;
@@ -319,3 +374,156 @@ main .entrenamientos-order {
         filter: drop-shadow(2px 2px 5px black);
         text-decoration: underline 1px #ff895b9f;
         text-underline-offset: 3px; }
+
+@media (max-width: 765px) {
+  header .bg-mio {
+    height: fit-content; }
+  .container-fluid .navbar-brand .logoHeader {
+    object-fit: contain; }
+  .container-fluid .contain-btn-nav div .nav-mio {
+    flex-direction: column;
+    align-items: start;
+    gap: .0625rem;
+    padding: .3125rem; }
+  main .portada {
+    height: 45rem;
+    width: 100%; }
+    main .portada h1 {
+      font-size: 4rem;
+      font-weight: 500; }
+  main .entrenamientosPerzonalizados .personalizadosArticles {
+    gap: 16px;
+    height: 15rem;
+    width: 100%; }
+    main .entrenamientosPerzonalizados .personalizadosArticles article {
+      padding: .9375rem; }
+      main .entrenamientosPerzonalizados .personalizadosArticles article img {
+        width: 9.375rem;
+        height: 6.75rem; }
+      main .entrenamientosPerzonalizados .personalizadosArticles article h3 {
+        padding-top: 1.25rem; }
+  main .sobreNosotros {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+    height: 25rem;
+    color: white; }
+    main .sobreNosotros h2 {
+      padding: 1.5625rem; }
+    main .sobreNosotros article {
+      width: 80%; }
+  .portada .grid-rutinas {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 55px);
+    padding: 0 1.875rem 0 1.875rem; }
+    .portada .grid-rutinas a h2 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: none;
+      justify-content: center;
+      align-items: center;
+      gap: none;
+      padding: 0; }
+  .entrenamientos-order h2 {
+    padding-left: 0px; }
+  .entrenamientos-order .sub-order article img {
+    height: 9rem;
+    width: 9.25rem; }
+  .flex-map iframe {
+    width: 25rem;
+    height: 18.75rem; }
+  .contacto .container-form {
+    margin-bottom: 0; }
+    .contacto .container-form form {
+      width: 80%; }
+      .contacto .container-form form .form-flex label {
+        font-size: 1.30rem; }
+  .videos {
+    padding: 0; }
+    .videos h2 {
+      margin: 15px; } }
+
+@media (max-width: 765px) {
+  h1 {
+    font-size: 3rem; }
+  h2 {
+    font-size: 1.75rem; }
+  h3 {
+    font-size: 1.5rem; }
+  p {
+    font-size: 1.625rem; } }
+
+@media (max-width: 550px) {
+  main .portada {
+    justify-content: center;
+    align-items: center; }
+    main .portada h1 {
+      padding: 0; }
+    main .portada h2 {
+      padding: 0; }
+  main .entrenamientosPersonalizados {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem; }
+    main .entrenamientosPersonalizados h2 {
+      padding-left: 0; }
+  main .sobreNosotros {
+    background-image: url("../assets/img_proyecto/section-celu-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%; }
+    main .sobreNosotros h2 {
+      margin-top: 1.5rem; }
+  main .portada h1 {
+    padding: 1.5625rem;
+    font-size: 2.25rem; }
+  main .portada .grid-rutinas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9375rem;
+    margin-top: 0; }
+  main .entrenamientos-order .sub-order {
+    flex-direction: column; }
+    main .entrenamientos-order .sub-order article {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      align-items: center;
+      gap: 0.9375rem;
+      width: 100%; }
+  .nosotrosMain article {
+    width: 100%; }
+    .nosotrosMain article .flex-nosotros {
+      width: 90%; }
+    .nosotrosMain article .flex-map iframe {
+      width: 15.625rem;
+      height: 12.5rem; }
+  .contacto .container-form form {
+    background-image: none;
+    width: 100%;
+    padding: .625rem; }
+    .contacto .container-form form .form-flex .inputNormal {
+      height: fit-content;
+      font-size: 1.25rem; }
+    .contacto .container-form form .form-flex .buttonRegistro {
+      font-size: 1.25rem; } }
+
+@media (max-width: 765px) {
+  h1 {
+    font-size: 2.25rem; }
+  h2 {
+    font-size: 1.25rem; }
+  h3 {
+    font-size: 1rem; }
+  p {
+    font-size: 1rem; } }

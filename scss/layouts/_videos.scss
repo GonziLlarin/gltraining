@@ -1,0 +1,43 @@
+.videos {
+    background-image: url('../assets/img_proyecto/SECTION02.0.png');
+    background-size: contain;
+    color: $colorFuente;
+
+    h1 {
+        padding: $paddingH1;
+    }
+
+    h2 {
+        padding: .625rem;
+    }
+
+    .intro {
+        padding: 3.125rem;
+        width: 70%;
+        margin: auto;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .flex-videos {
+        @include flex(flex, column, none, center, center, none);
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                text-shadow: 2px 2px 20px white;
+                text-decoration: underline 1px #ff895b9f;
+                text-underline-offset: 3px;
+            }
+        }
+    }
+
+    h3 {
+        color: $miNaranja;
+        padding: 15px;
+    }
+
+}

@@ -1,11 +1,10 @@
 .nosotrosMain {
     background-image: url('../assets/img_proyecto/SECTION02.0.png');
     background-size: contain;
-    color: white;
+    color: $colorFuente;
 
     h1 {
-        padding-left: 6.25rem;
-        padding-top: 9.375rem;
+        padding: $paddingH1;
     }
 
     article {

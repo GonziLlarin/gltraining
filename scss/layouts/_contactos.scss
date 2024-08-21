@@ -1,11 +1,10 @@
 .contacto {
     background-image: url('../assets/img_proyecto/SECTION02.0.png');
     background-size: contain;
-    color: white;
+    color: $colorFuente;
 
     h1 {
-        padding-left: 6.25rem;
-        padding-top: 9.375rem;
+        padding:$paddingH1;
     }
 
     .container-form {
@@ -17,7 +16,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             font-size: 28px;
-            color: white;
+            color: $colorFuente;
             width: 37.5rem;
             padding: 25px;
             margin: auto;

@@ -1,0 +1,34 @@
+.main-bootstrap {
+    background-image: url(../assets/img_proyecto/gim-aire-libre.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    h1 {
+        padding: $paddingH1;
+    }
+
+    .contain-contain {
+        @include flex(flex, column, none, center, center, none);
+
+        padding: 3.125rem;
+        .p-cambios {
+            background-color: #faa25b7e;
+            padding: .3125rem;
+            border-radius: 15px;
+
+        }
+
+        .section-cambios {
+            height: 500px;
+            padding: 50px;
+            overflow: hidden;
+        }
+    }
+}
+
+.carousel-caption {
+    p {
+        font-size: .875rem;
+    }
+}

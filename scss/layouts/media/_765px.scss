@@ -1,0 +1,145 @@
+@media (max-width:765px) {
+
+    header {
+        .bg-mio {
+            height: fit-content;
+        }
+    }
+
+    .container-fluid {
+
+        .navbar-brand {
+            .logoHeader {
+                object-fit: contain;
+            }
+        }
+
+        .contain-btn-nav {
+            div {
+                .nav-mio {
+                    flex-direction: column;
+                    align-items: start;
+                    gap: .0625rem;
+                    padding: .3125rem;
+                }
+            }
+        }
+    }
+
+    //** INDEX **//
+    main {
+        .portada {
+            height: 45rem;
+            width: 100%;
+
+            h1 {
+                font-size: 4rem;
+                font-weight: 500;
+            }
+        }
+
+        .entrenamientosPerzonalizados {
+
+            .personalizadosArticles {
+                gap: 16px;
+                height: 15rem;
+                width: 100%;
+
+                article {
+                    padding: .9375rem;
+
+                    img {
+                        width: 9.375rem;
+                        height: 6.75rem;
+                    }
+
+                    h3 {
+                        padding-top: 1.25rem;
+                    }
+                }
+            }
+        }
+
+        .sobreNosotros {
+            @include flex(flex, column, nowrap, center, center, none);
+            height: 25rem;
+            color: $colorFuente;
+
+            h2 {
+                padding: 1.5625rem;
+            }
+
+            article {
+                width: 80%;
+            }
+        }
+    }
+
+    //** RUTINAS**//
+
+
+    .portada {
+        .grid-rutinas {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 55px);
+            padding: 0 1.875rem 0 1.875rem;
+
+            a {
+                h2 {
+                    @include flex(flex, row, none, center, center, none);
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    .entrenamientos-order {
+        h2{
+            padding-left: 0px;
+        }
+        .sub-order {
+            article {
+                img {
+                    height: 9rem;
+                    width: 9.25rem;
+                }
+            }
+        }
+    }
+
+//*NOSOTROS*//
+
+.flex-map{
+    iframe{
+        width: 25rem;
+        height: 18.75rem;
+    }
+}
+
+
+//** CONTACTO**//
+
+.contacto{
+    .container-form{
+        margin-bottom: 0;
+        form{
+            width: 80%;
+            .form-flex{
+                label{
+                    font-size: 1.30rem;
+                }
+                
+            }
+        }
+    }
+}
+
+//* VIDEOS *//
+
+.videos{
+    padding: 0;
+    h2{
+        margin: 15px;
+    }
+}
+}

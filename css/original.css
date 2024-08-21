@@ -360,7 +360,7 @@ footer section a:hover{
 
 /* Contacto  */
 
-.contacto {
+/* .contacto {
     background-image: url('../assets/img_proyecto/SECTION02.0.png');
     background-size: contain;
     color: white;
@@ -423,12 +423,12 @@ form :focus{
     background-color: #faa25b;
     outline: none;
     border:0;
-}
+} */
 
 
 /* VIDEOS */
 
-.videos {
+/* .videos {
     background-image: url('../assets/img_proyecto/SECTION02.0.png');
     background-size: contain;
     color: white;
@@ -472,11 +472,11 @@ form :focus{
     text-decoration: underline 1px #ff895b9f;
     text-underline-offset: 3px;
 }
-
+ */
 
 
 /** BOOTSTRAP**/
-.contain-contain{
+/* .contain-contain{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -502,13 +502,13 @@ form :focus{
     height: 500px;
     padding: 50px;    
     overflow: hidden;
-}
+} */
 
 /**          TAMAÑO TABLET             - -              --             --**/
 
 @media (max-width:800px) {
 
-    header{
+    /* header{
         height: fit-content
     }
 
@@ -520,29 +520,19 @@ form :focus{
     .portada h2 {
         font-size: 1.75rem;
         font-weight: 450;
-    }
+    } */
 
-    h2 {
-        font-size: 1.75rem;
-    }
 
-    h3 {
-        font-size: 1.5rem;
-    }
-
-    p {
-        font-size: 1.625rem;
-    }
-    .nav-mio{
+    /* .nav-mio{
         flex-direction: column;
         gap: .0625rem;
         align-items: start;
         padding: .3125rem;
-    }
-    .portada {
+    } */
+    /* .portada {
         height: 37.5rem;
         width: 100%;
-    }
+    } */
 
     .personalizadosArticles {
         gap: 16px;
@@ -586,7 +576,7 @@ form :focus{
     }
 
     /**RUTINAS**/
-    .grid-rutinas {
+    /* .grid-rutinas {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2,55px);
         margin-top: 4.375rem;
@@ -596,19 +586,19 @@ form :focus{
         display: flex;
         justify-content: center;
         padding: 0;
-    }
+    } */
 
-    .sub-order article img{
+    /* .sub-order article img{
         height: 9rem;
         width: 9.25rem;
-    }
+    } */
 
 
-    .flex-map iframe{
+    /* .flex-map iframe{
         width: 25rem;
         height: 18.75rem;
-    }
-
+    } */
+/* 
     .contacto form{
         width: 80%;
     }
@@ -619,15 +609,15 @@ form :focus{
 
     .form-flex{
         width: 28.125rem;
-        /* height: 37.5rem; */
+        height: 37.5rem;
         padding: 1.25rem;
         padding-bottom: 2.1875rem;
     }
     .form-flex label{
         font-size: 1.5rem;
     }
-
-
+ */
+/* 
     .videos{
         padding: 0;
     }
@@ -638,25 +628,22 @@ form :focus{
     .videos h2{
         margin: 15px;
     }
-}
+} */
 
 
 /**          TAMAÑO CELU             - -              --             --**/
 
 @media (max-width:550px){
 
-header{
+/* header{
     height: fit-content;
     position: relative;
 }
 .logoHeader{
     align-items: center;
     height: 100px;
-}
-nav ul{
-    flex-direction: column;
-}
-
+} */
+/* 
     .portada h1 {
         font-size: 2.25rem;
         font-weight: 500;
@@ -714,9 +701,9 @@ nav ul{
 
     .sobreNosotros article p{
         width: 80%;
-    }
+    } */
 
-    .grid-rutinas{
+    /* .grid-rutinas{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -743,8 +730,8 @@ nav ul{
     }
     .sub-order article h3{
         padding: 0;
-    }
-
+    } */
+/* 
     .nosotrosMain section h1{
         font-size: 40px;
         padding-top: 8.375rem;
@@ -763,7 +750,7 @@ nav ul{
     .flex-map iframe{
         width: 15.625rem;
         height: 12.5rem;
-    }
+    } */
 
     .contacto h1{
         font-size: 40px;
