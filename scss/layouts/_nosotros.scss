@@ -1,0 +1,38 @@
+.nosotrosMain {
+    background-image: url('../assets/img_proyecto/SECTION02.0.png');
+    background-size: contain;
+    color: white;
+
+    h1 {
+        padding-left: 6.25rem;
+        padding-top: 9.375rem;
+    }
+
+    article {
+        @include flex(flex, column, none, center, center, none);
+
+        .flex-nosotros {
+            @include flex(flex, column, nowrap, center, center, none);
+            width: 80%;
+
+            h2 {
+                text-transform: uppercase;
+                padding-top: 50px;
+            }
+
+            p {
+                padding-top: 50px;
+
+                &:hover {
+                    text-shadow: 2px 2px 30px white;
+                }
+            }
+        }
+
+        .flex-map {
+            iframe {
+                margin: 3.125rem;
+            }
+        }
+    }
+}

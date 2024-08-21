@@ -1,22 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap'); */
 
-* {
+/* * {
     margin: 0;
     text-decoration: none;
     list-style: none;
     font-family: "Mukta", sans-serif;
-}
+} */
 /** BOOTSTRAP PRUEBA**/
 
 
-body{
+/* body{
     display: flex;
     flex-direction: column;
     width: 100%;
-}
+} */
 
 
-h1 {
+/* h1 {
     font-size: 4.5rem;
     font-weight: 500;
 }
@@ -34,23 +34,23 @@ h3 {
 p {
     font-size: 1.625rem;
     font-weight: 300;
-}
+} */
 
 
 /** HEADER **/
 
-.bg-mio{
+/* .bg-mio{
     position: fixed;
     background-image: url('../assets/img_proyecto/cuadro-encabezado.png');
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-}
-.btn-nav{
+} */
+/* .btn-nav{
     background-color: white;
     color: white;
-}
-.nav-mio{
+} */
+/* .nav-mio{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -59,33 +59,33 @@ p {
     gap: .9375rem;
     height: 100%;
     padding-right: 3.125rem;
-}
-.contain-btn-nav{
+} */
+/* .contain-btn-nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.logoHeader {
+} */
+/* .logoHeader {
     width: 100px;
     height: 100%;
     overflow: hidden;
-}
-.navbar-nav a{
+} */
+/* .navbar-nav a{
     color: white;
-}
+} */
 
-
+/* 
 .nav-mio a:hover{
     filter: drop-shadow(2px 2px 5px black);
     text-decoration: underline 1px #ff895b9f;
     text-underline-offset: 3px;
-}
+} */
 
 
 /** MAIN **/
 
-main{
+/* main{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -109,13 +109,13 @@ main{
     padding-left: 100px;
     font-weight: 450;
     color: black;
-}
+} */
 
 
 
 /**section personalizados**/
 
-.entrenamientosPersonalizados {
+/* .entrenamientosPersonalizados {
     background-image: url('../assets/img_proyecto/SECTION02.0.png');
     background-size: cover;
     color: white;
@@ -152,10 +152,10 @@ main{
 
 .entrenamientosPersonalizados article h3 {
     padding-top: 20px;
-}
+} */
 
 /**section SOBRE NOSOTROS**/
-
+/* 
 .sobreNosotros {
     background-image: url('../assets/img_proyecto/SECTION3.png');
     background-repeat: no-repeat;
@@ -200,12 +200,12 @@ main{
     text-decoration: underline 2px #FF895B;
     text-underline-offset: 10px;
 }
-
+ */
 
 /**footerr**/
 
 
-footer {
+/* footer {
     background-image: url('../assets/img_proyecto/cuadro-encabezado.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -226,14 +226,14 @@ footer section a img {
 }
 footer section a:hover{
     filter: drop-shadow(2px 2px 5px black);
-}
+} */
 
 
 
 /** RUTINAS **/
 
 /**portada**/
-
+/* 
 .portada {
     display: flex;
     flex-direction: column;
@@ -308,14 +308,14 @@ footer section a:hover{
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-}
+} */
 
 /* Nosotross  */
 
 
 /**MAIN**/
 
-.nosotrosMain {
+/* .nosotrosMain {
     background-image: url('../assets/img_proyecto/SECTION02.0.png');
     background-size: contain;
     color: white;
@@ -324,14 +324,14 @@ footer section a:hover{
 .nosotrosMain section h1{
     padding: 50px;
     margin-top: 50px;
-}
-.nosotrosMain article{
+} */
+/* .nosotrosMain article{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
+} */
+/* 
 .nosotrosMain section h2 {
     text-transform: uppercase;
     padding-top: 50px;
@@ -356,7 +356,7 @@ footer section a:hover{
 }
 .flex-nosotros p:hover{
     text-shadow: 2px 2px 30px white;
-}
+} */
 
 /* Contacto  */
 

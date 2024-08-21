@@ -1,0 +1,36 @@
+.container-fluid {
+    .navbar-brand {
+        .logoHeader {
+            width: 100px;
+            height: 100%;
+            overflow: hidden;
+        }
+    }
+
+    .contain-btn-nav {
+        @include flex(flex, column, none, center, center, none);
+
+        .btn-nav {
+            background-color: white;
+            color: white;
+        }
+
+        div {
+            .nav-mio {
+                @include flex(flex, row, nowrap, center, center, .9375rem);
+                height: 100%;
+                padding-right: 3.125rem;
+
+                a {
+                    color: white;
+
+                    &:hover {
+                        filter: drop-shadow(2px 2px 5px black);
+                        text-decoration: underline 1px #ff895b9f;
+                        text-underline-offset: 3px;
+                    }
+                }
+            }
+        }
+    }
+}
