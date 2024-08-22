@@ -4,7 +4,7 @@ footer {
     background-size: cover;
 
     .flex-footer {
-        @include flex(flex, row, wrap, center, center, 2rem);
+        @include flex(flex, row, nowrap, center, center, 2rem);
 
         a {
             img {
