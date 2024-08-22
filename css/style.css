@@ -1,4 +1,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+.text-focus-in {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
+.scale-in-hor-center {
+  -webkit-animation: scale-in-hor-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-hor-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes scale-in-hor-center {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    opacity: 1; } }
+
+@keyframes scale-in-hor-center {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    opacity: 1; } }
+
 * {
   margin: 0;
   text-decoration: none;
@@ -11,7 +59,8 @@ h1 {
 
 h2 {
   font-size: 2.25rem;
-  font-weight: 450; }
+  font-weight: 450;
+  transform: skew(-10deg); }
 
 h3 {
   font-size: 1.75rem;
@@ -30,13 +79,15 @@ body {
   gap: none;
   width: 100%; }
 
-header .bg-mio {
-  position: fixed;
-  background-image: url("../assets/img_proyecto/cuadro-encabezado.png");
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 5.1619rem; }
+header {
+  z-index: 1000; }
+  header .bg-mio {
+    position: fixed;
+    background-image: url("../assets/img_proyecto/cuadro-encabezado.png");
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 5.1619rem; }
 
 footer {
   background-image: url("../assets/img_proyecto/cuadro-encabezado.png");
@@ -101,7 +152,8 @@ main {
         main .entrenamientosPersonalizados .personalizadosArticles article:hover {
           filter: drop-shadow(4px 4px 10px #FF895B); }
         main .entrenamientosPersonalizados .personalizadosArticles article h3 {
-          padding-top: 1.25rem; }
+          padding-top: 1.25rem;
+          transform: skew(-20deg); }
   main .sobreNosotros {
     background-image: url("../assets/img_proyecto/SECTION3.png");
     background-repeat: no-repeat;
@@ -155,10 +207,6 @@ main .portada {
     grid-template-areas: "fuerza hipertrofia resistencia" "potencia velocidad cardiovascular";
     justify-content: center;
     align-items: center;
-    background: black;
-    background: linear-gradient(90deg, black 0%, black 51%, white 62%, white 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     overflow: hidden; }
     main .portada .grid-rutinas .fuerza {
       grid-area: fuerza; }
@@ -172,10 +220,15 @@ main .portada {
       grid-area: velocidad; }
     main .portada .grid-rutinas .cardiovascular {
       grid-area: cardiovascular; }
-    main .portada .grid-rutinas a:hover {
-      text-shadow: 2px 2px 30px white;
-      text-decoration: underline 1px #ff895b9f;
-      text-underline-offset: 3px; }
+    main .portada .grid-rutinas h2 {
+      color: black; }
+    main .portada .grid-rutinas a {
+      text-decoration: none; }
+      main .portada .grid-rutinas a:hover {
+        transform: scale(1.2);
+        text-shadow: 2px 2px 30px white;
+        text-decoration: underline 1px #ff895b9f;
+        text-underline-offset: 3px; }
 
 main .entrenamientos-order {
   display: flex;
@@ -200,6 +253,8 @@ main .entrenamientos-order {
       gap: 1.25rem;
       padding-top: 2.25rem;
       padding-bottom: 2.25rem; }
+      main .entrenamientos-order .sub-order article h3 {
+        transform: skew(-20deg); }
       main .entrenamientos-order .sub-order article:hover {
         filter: drop-shadow(4px 4px 10px #FF895B); }
 
@@ -315,7 +370,8 @@ main .entrenamientos-order {
         text-underline-offset: 3px; }
   .videos h3 {
     color: #FE7D4B;
-    padding: 15px; }
+    padding: 15px;
+    transform: skew(-20deg); }
 
 .main-bootstrap {
   background-image: url(../assets/img_proyecto/gim-aire-libre.jpg);
@@ -348,6 +404,8 @@ main .entrenamientos-order {
   width: 100px;
   height: 100%;
   overflow: hidden; }
+  .container-fluid .navbar-brand .logoHeader:hover {
+    filter: drop-shadow(2px 2px 5px white); }
 
 .container-fluid .contain-btn-nav {
   display: flex;
@@ -371,6 +429,7 @@ main .entrenamientos-order {
     .container-fluid .contain-btn-nav div .nav-mio a {
       color: white; }
       .container-fluid .contain-btn-nav div .nav-mio a:hover {
+        transform: scale(1.2);
         filter: drop-shadow(2px 2px 5px black);
         text-decoration: underline 1px #ff895b9f;
         text-underline-offset: 3px; }

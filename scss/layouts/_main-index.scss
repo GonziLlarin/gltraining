@@ -11,12 +11,14 @@ main {
         h1 {
             font-size: 5.625rem;
             padding:$paddingH1;
+            
         }
 
         h2 {
             padding-left: 100px;
             font-weight: 450;
             color: black;
+            
         }
     }
 
@@ -43,6 +45,7 @@ main {
 
                 h3 {
                     padding-top: 1.25rem;
+                    transform: skew(-20deg);
                 }
             }
         }

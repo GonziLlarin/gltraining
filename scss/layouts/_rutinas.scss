@@ -14,12 +14,8 @@ main {
                 "potencia velocidad cardiovascular";
             justify-content: center;
             align-items: center;
-            background: rgb(0, 0, 0);
-            background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 51%, rgba(255, 255, 255, 1) 62%, rgba(255, 255, 255, 1) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
             overflow: hidden;
-
+            
             .fuerza {
                 grid-area: fuerza;
             }
@@ -43,9 +39,14 @@ main {
             .cardiovascular {
                 grid-area: cardiovascular;
             }
-
+            h2{
+                color: black;
+                
+            }
             a {
+                text-decoration: none;
                 &:hover {
+                    transform: scale(1.2);
                     text-shadow: 2px 2px 30px white;
                     text-decoration: underline 1px #ff895b9f;
                     text-underline-offset: 3px;
@@ -66,7 +67,9 @@ main {
                 @include flex(flex, column, nowrap, center, center, 1.25rem);
                 padding-top: 2.25rem;
                 padding-bottom: 2.25rem;
-
+                h3{
+                    transform: skew(-20deg);
+                }
                 &:hover{
                     filter: drop-shadow(4px 4px 10px #FF895B);
                 }
