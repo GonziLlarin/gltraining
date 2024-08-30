@@ -70,15 +70,6 @@ p {
   font-size: 1.625rem;
   font-weight: 300; }
 
-body {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: none;
-  align-items: none;
-  gap: none;
-  width: 100%; }
-
 header {
   z-index: 1000; }
   header .bg-mio {
@@ -122,7 +113,7 @@ main {
     background-size: cover; }
     main .portada h1 {
       font-size: 5.625rem;
-      padding: 9.375rem 0 0 6.25rem; }
+      padding: 9.375rem; }
     main .portada h2 {
       padding-left: 100px;
       font-weight: 450;
@@ -263,7 +254,8 @@ main .entrenamientos-order {
   background-size: contain;
   color: white; }
   .nosotrosMain h1 {
-    padding: 9.375rem 0 0 6.25rem; }
+    padding-top: 9.375rem;
+    padding-left: 6rem; }
   .nosotrosMain article {
     display: flex;
     flex-direction: column;
@@ -294,7 +286,7 @@ main .entrenamientos-order {
   background-size: contain;
   color: white; }
   .contacto h1 {
-    padding: 9.375rem 0 0 6.25rem; }
+    padding: 9.375rem; }
   .contacto .container-form {
     margin-bottom: 5.425rem;
     padding-top: 3.125rem; }
@@ -346,7 +338,7 @@ main .entrenamientos-order {
   background-size: contain;
   color: white; }
   .videos h1 {
-    padding: 9.375rem 0 0 6.25rem; }
+    padding: 9.375rem; }
   .videos h2 {
     padding: .625rem; }
   .videos .intro {
@@ -369,7 +361,7 @@ main .entrenamientos-order {
         text-decoration: underline 1px #ff895b9f;
         text-underline-offset: 3px; }
   .videos h3 {
-    color: #FE7D4B;
+    color: #fe7d4b;
     padding: 15px;
     transform: skew(-20deg); }
 
@@ -379,7 +371,7 @@ main .entrenamientos-order {
   background-repeat: no-repeat;
   background-position: center; }
   .main-bootstrap h1 {
-    padding: 9.375rem 0 0 6.25rem; }
+    padding: 9.375rem; }
   .main-bootstrap .contain-contain {
     display: flex;
     flex-direction: column;
@@ -516,9 +508,12 @@ main .entrenamientos-order {
     font-size: 1.625rem; } }
 
 @media (max-width: 550px) {
+  header {
+    position: sticky; }
   main .portada {
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    width: 100%; }
     main .portada h1 {
       padding: 0; }
     main .portada h2 {
@@ -560,17 +555,22 @@ main .entrenamientos-order {
       align-items: center;
       gap: 0.9375rem;
       width: 100%; }
-  .nosotrosMain article {
-    width: 100%; }
-    .nosotrosMain article .flex-nosotros {
-      width: 90%; }
-    .nosotrosMain article .flex-map iframe {
-      width: 15.625rem;
-      height: 12.5rem; }
+  .nosotrosMain {
+    align-items: center;
+    justify-content: center; }
+    .nosotrosMain h1 {
+      padding-left: 0; }
+    .nosotrosMain article {
+      width: 100%; }
+      .nosotrosMain article .flex-nosotros {
+        width: 90%; }
+      .nosotrosMain article .flex-map iframe {
+        width: 15.625rem;
+        height: 12.5rem; }
   .contacto .container-form form {
     background-image: none;
     width: 100%;
-    padding: .625rem; }
+    padding: 0.625rem; }
     .contacto .container-form form .form-flex .inputNormal {
       height: fit-content;
       font-size: 1.25rem; }

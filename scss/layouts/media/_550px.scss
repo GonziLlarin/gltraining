@@ -1,119 +1,122 @@
-@media (max-width:550px) {
+@media (max-width: 550px) {
+  header {
+    position: sticky;
+  }
+  main {
+    .portada {
+      justify-content: center;
+      align-items: center;
+      width: 100%;
 
-    main {
-        .portada {
-            justify-content: center;
-            align-items: center;
+      h1 {
+        padding: 0;
+      }
 
-            h1 {
-                padding: 0;
-            }
-
-            h2 {
-                padding: 0;
-            }
-        }
-
-        .entrenamientosPersonalizados {
-            @include flex(flex, column, nowrap, center, center, 1.25rem);
-
-            h2 {
-                padding-left: 0;
-            }
-        }
-
-        .sobreNosotros {
-            background-image: url('../assets/img_proyecto/section-celu-3.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 100%;
-
-            h2 {
-                margin-top: 1.5rem;
-            }
-        }
+      h2 {
+        padding: 0;
+      }
     }
 
-    //** RUTINAS**//
+    .entrenamientosPersonalizados {
+      @include flex(flex, column, nowrap, center, center, 1.25rem);
 
-    main {
-        .portada {
-            h1 {
-                padding: 1.5625rem;
-                font-size: 2.25rem;
-            }
-
-            .grid-rutinas {
-                @include flex(flex, column, none, center, center, .9375rem);
-                margin-top: 0;
-            }
-        }
-
-        .entrenamientos-order {
-            .sub-order {
-                flex-direction: column;
-
-                article {
-                    @include flex(flex, row, nowrap, space-around, center, .9375rem);
-                    width: 100%;
-                }
-            }
-        }
+      h2 {
+        padding-left: 0;
+      }
     }
 
-    //* NOSOTROS *//
+    .sobreNosotros {
+      background-image: url("../assets/img_proyecto/section-celu-3.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
 
-    .nosotrosMain {
+      h2 {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+
+  //** RUTINAS**//
+
+  main {
+    .portada {
+      h1 {
+        padding: 1.5625rem;
+        font-size: 2.25rem;
+      }
+
+      .grid-rutinas {
+        @include flex(flex, column, none, center, center, 0.9375rem);
+        margin-top: 0;
+      }
+    }
+
+    .entrenamientos-order {
+      .sub-order {
+        flex-direction: column;
+
         article {
-            width: 100%;
-
-            .flex-nosotros {
-                width: 90%;
-            }
-
-            .flex-map iframe {
-                width: 15.625rem;
-                height: 12.5rem;
-            }
+          @include flex(flex, row, nowrap, space-around, center, 0.9375rem);
+          width: 100%;
         }
+      }
     }
+  }
 
+  //* NOSOTROS *//
 
-    //* CONTACTO*//
-    .contacto {
-        .container-form {
-            form {
-                background-image: none;
-                width: 100%;
-                padding: .625rem;
+  .nosotrosMain {
+    align-items: center;
+    justify-content: center;
+    h1 {
+      padding-left: 0;
+    }
+    article {
+      width: 100%;
 
-                .form-flex {
-                    .inputNormal {
-                        height: fit-content;
-                        font-size: 1.25rem;
-                    }
+      .flex-nosotros {
+        width: 90%;
+      }
 
-                    .buttonRegistro {
-                        font-size: 1.25rem;
-                    }
-                }
-            }
+      .flex-map iframe {
+        width: 15.625rem;
+        height: 12.5rem;
+      }
+    }
+  }
+
+  //* CONTACTO*//
+  .contacto {
+    .container-form {
+      form {
+        background-image: none;
+        width: 100%;
+        padding: 0.625rem;
+
+        .form-flex {
+          .inputNormal {
+            height: fit-content;
+            font-size: 1.25rem;
+          }
+
+          .buttonRegistro {
+            font-size: 1.25rem;
+          }
         }
+      }
     }
+  }
 
+  //** VIDEOS**//
 
-//** VIDEOS**//
-
-
-.videos{
-    .intro{
-            width: 90%;
-            padding: 2.5rem 1.5rem 2.5rem 1.5rem ;
-            margin-bottom: 1.875rem;
-            text-align: justify;
-            transform: skew(0deg);
+  .videos {
+    .intro {
+      width: 90%;
+      padding: 2.5rem 1.5rem 2.5rem 1.5rem;
+      margin-bottom: 1.875rem;
+      text-align: justify;
+      transform: skew(0deg);
     }
-}
-
-
+  }
 }
