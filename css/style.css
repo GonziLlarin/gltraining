@@ -571,21 +571,53 @@ main .entrenamientos-order {
         width: 100%; }
         .nosotrosMain article .flex-map iframe {
           width: 100%; }
-  .contacto .container-form form {
-    background-image: none;
-    width: 100%;
-    padding: 0.625rem; }
-    .contacto .container-form form .form-flex .inputNormal {
-      height: fit-content;
-      font-size: 1.25rem; }
-    .contacto .container-form form .form-flex .buttonRegistro {
-      font-size: 1.25rem; }
-  .videos .intro {
-    width: 90%;
-    padding: 2.5rem 1.5rem 2.5rem 1.5rem;
-    margin-bottom: 1.875rem;
-    text-align: justify;
-    transform: skew(0deg); } }
+  .contacto {
+    justify-content: center;
+    align-items: center; }
+    .contacto h1 {
+      padding: 0;
+      padding-top: 9rem; }
+    .contacto .container-form {
+      width: 100%; }
+      .contacto .container-form form {
+        display: flex;
+        flex-direction: none;
+        flex-wrap: none;
+        justify-content: center;
+        align-items: center;
+        gap: none;
+        background-image: none;
+        width: 100%;
+        padding: 0; }
+        .contacto .container-form form .form-flex {
+          align-items: center;
+          width: 90%; }
+          .contacto .container-form form .form-flex .inputNormal {
+            height: fit-content;
+            font-size: 1.25rem; }
+          .contacto .container-form form .form-flex .buttonRegistro {
+            font-size: 1.25rem; }
+  .videos {
+    align-items: center;
+    justify-content: center; }
+    .videos h1 {
+      padding: 0;
+      padding-top: 9rem; }
+    .videos .intro {
+      width: 90%;
+      padding: 2.5rem 1.5rem 2.5rem 1.5rem;
+      text-align: justify;
+      transform: skew(0deg); } }
+
+.main-bootstrap {
+  align-items: center;
+  justify-content: center; }
+  .main-bootstrap h1 {
+    padding: 0;
+    padding-top: 9rem; }
+  .main-bootstrap .contain-contain .section-cambios {
+    height: 100%;
+    padding: 0; }
 
 .portada,
 .entrenamientosPersonalizados,

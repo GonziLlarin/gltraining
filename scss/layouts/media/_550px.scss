@@ -100,13 +100,23 @@
 
   //* CONTACTO*//
   .contacto {
+    justify-content: center;
+    align-items: center;
+    h1 {
+      padding: 0;
+      padding-top: 9rem;
+    }
     .container-form {
+      width: 100%;
       form {
+        @include flex(flex, none, none, center, center, none);
         background-image: none;
         width: 100%;
-        padding: 0.625rem;
+        padding: 0;
 
         .form-flex {
+          align-items: center;
+          width: 90%;
           .inputNormal {
             height: fit-content;
             font-size: 1.25rem;
@@ -123,15 +133,36 @@
   //** VIDEOS**//
 
   .videos {
+    align-items: center;
+    justify-content: center;
+    h1 {
+      padding: 0;
+      padding-top: 9rem;
+    }
     .intro {
       width: 90%;
       padding: 2.5rem 1.5rem 2.5rem 1.5rem;
-      margin-bottom: 1.875rem;
       text-align: justify;
       transform: skew(0deg);
     }
   }
 }
+
+.main-bootstrap {
+  align-items: center;
+  justify-content: center;
+  h1 {
+    padding: 0;
+    padding-top: 9rem;
+  }
+  .contain-contain {
+    .section-cambios {
+      height: 100%;
+      padding: 0;
+    }
+  }
+}
+
 .portada,
 .entrenamientosPersonalizados,
 .sobreNosotros,
