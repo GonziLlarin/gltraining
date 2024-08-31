@@ -1,64 +1,63 @@
 .contacto {
-    background-image: url('../assets/img_proyecto/SECTION02.0.png');
-    background-size: contain;
-    color: $colorFuente;
+  background-image: url("../assets/img_proyecto/SECTION02.0.png");
+  background-size: contain;
+  color: $colorFuente;
 
-    h1 {
-        padding:$paddingH1;
-    }
+  h1 {
+    padding-top: $paddingH1;
+    padding-left: 6rem;
+  }
 
-    .container-form {
-        margin-bottom: 5.425rem;
-        padding-top: 3.125rem;
+  .container-form {
+    margin-bottom: 5.425rem;
+    padding-top: 3.125rem;
 
-        form {
-            background-image: url('../assets/img_proyecto/contacto/Rectangle\ 8.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            font-size: 28px;
-            color: $colorFuente;
-            width: 37.5rem;
-            padding: 25px;
-            margin: auto;
+    form {
+      background-image: url("../assets/img_proyecto/contacto/Rectangle\ 8.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-size: 28px;
+      color: $colorFuente;
+      width: 37.5rem;
+      padding: 25px;
+      margin: auto;
 
-            .form-flex {
-                @include flex(flex, column, nowrap, center, center, none);
+      .form-flex {
+        @include flex(flex, column, nowrap, center, center, none);
 
-                .inputNormal {
-                    padding: 5px;
-                    border: none;
-                    border-radius: 4px;
-                    background-color: #FF895B;
-                    width: 80%;
-                    font-family: "Mukta", sans-serif;
-                    font-weight: 500;
-                    &:focus {
-                        filter: drop-shadow(5px 5px 5px white);
-                        background-color: #faa25b;
-                        outline: none;
-                        border: 0;
-                    }
-                }
-
-                .buttonRegistro {
-                    background-color: #FAAA65;
-                    color: black;
-                    border-radius: 30px;
-                    padding: 15px 25px;
-                    font-size: 32px;
-                    margin: 15px;
-                    border: none;
-                    cursor: pointer;
-
-                    &:hover {
-                        background-color: #f78623;
-                        box-shadow: 0 0 30px white;
-                        color: rgba(2, 2, 2, 0.774)
-                    }
-                }
-                
-            }
-
+        .inputNormal {
+          padding: 5px;
+          border: none;
+          border-radius: 4px;
+          background-color: #ff895b;
+          width: 80%;
+          font-family: "Mukta", sans-serif;
+          font-weight: 500;
+          &:focus {
+            filter: drop-shadow(5px 5px 5px white);
+            background-color: #faa25b;
+            outline: none;
+            border: 0;
+          }
         }
+
+        .buttonRegistro {
+          background-color: #faaa65;
+          color: black;
+          border-radius: 30px;
+          padding: 15px 25px;
+          font-size: 32px;
+          margin: 15px;
+          border: none;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #f78623;
+            box-shadow: 0 0 30px white;
+            color: rgba(2, 2, 2, 0.774);
+          }
+        }
+      }
     }
+  }
 }

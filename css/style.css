@@ -286,7 +286,8 @@ main .entrenamientos-order {
   background-size: contain;
   color: white; }
   .contacto h1 {
-    padding: 9.375rem; }
+    padding-top: 9.375rem;
+    padding-left: 6rem; }
   .contacto .container-form {
     margin-bottom: 5.425rem;
     padding-top: 3.125rem; }
@@ -310,7 +311,7 @@ main .entrenamientos-order {
           padding: 5px;
           border: none;
           border-radius: 4px;
-          background-color: #FF895B;
+          background-color: #ff895b;
           width: 80%;
           font-family: "Mukta", sans-serif;
           font-weight: 500; }
@@ -320,7 +321,7 @@ main .entrenamientos-order {
             outline: none;
             border: 0; }
         .contacto .container-form form .form-flex .buttonRegistro {
-          background-color: #FAAA65;
+          background-color: #faaa65;
           color: black;
           border-radius: 30px;
           padding: 15px 25px;
@@ -338,9 +339,10 @@ main .entrenamientos-order {
   background-size: contain;
   color: white; }
   .videos h1 {
-    padding: 9.375rem; }
+    padding-top: 9.375rem;
+    padding-left: 6rem; }
   .videos h2 {
-    padding: .625rem; }
+    padding: 0.625rem; }
   .videos .intro {
     padding: 3.125rem;
     width: 70%;
