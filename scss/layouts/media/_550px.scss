@@ -1,9 +1,5 @@
 @media (max-width: 550px) {
-  header {
-    position: sticky;
-  }
   main {
-    width: fit-content;
     .portada {
       justify-content: center;
       align-items: center;
@@ -21,7 +17,12 @@
       @include flex(flex, column, nowrap, center, center, 1.25rem);
 
       h2 {
+        font-size: 1rem;
         padding-left: 0;
+        padding-top: 1.25rem;
+      }
+      .personalizadosArticles {
+        padding: 0;
       }
     }
 
@@ -87,9 +88,12 @@
         width: 90%;
       }
 
-      .flex-map iframe {
-        width: 15.625rem;
-        height: 12.5rem;
+      .flex-map {
+        @include flex(flex, none, none, center, center, none);
+        width: 100%;
+        iframe {
+          width: 100%;
+        }
       }
     }
   }
@@ -126,5 +130,16 @@
       text-align: justify;
       transform: skew(0deg);
     }
+  }
+}
+.portada,
+.entrenamientosPersonalizados,
+.sobreNosotros,
+footer {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  .flex-footer {
+    flex-wrap: wrap;
   }
 }
